@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Pig Dice Games</h1>
+        <h1>Pig Dice Game</h1>
       </div>
       <div class="jumbotron">
         <h2>Rules:</h2>
@@ -23,19 +23,36 @@
       </div>
       <div class="row">
         <div id="name">
-          <form>
-            <div class="col-lg-6 form-group">
-              <h2>Player 1</h2>
-              <label for="player1">Enter your Name</label>
-              <input id="player1" class="form-control" type="text">
+          <div class="col-md-4">
+            <div class="well">
+              <h2 id="player1">Player 1</span></h3>
+              <h3>Score: <span id="player1score"></span></h2>
+              <h3>Wins: <span id="player1wins"></span></h3>
+              <div id="player1buttons">
+                <button id="roll" class="btn btn-large btn-danger">Roll Dice</button>
+                <button id="hold" class="btn btn-large btn-success">Hold</button>
+              </div>
             </div>
-            <button type="submit" class="btn-info">Ready to play!</button>
-          </form>
-        </div>
-        <div id="show-name">
-          <h1>Your name is:</h1>
-          <p><span class="player1"></span>
-          </p>
+          </div>
+          <div class="col-md-4">
+            <div class="well">
+              <h2>Roll: <span id= "dice"></span></h2>
+              <span id="displayedice"></span>
+              <h3 id="score">Current score: <span id="current"></span></h3>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="well">
+              <h2 id="player2">Player 2</h2>
+              <h3>Score: <span id="player2score"></span></h3>
+              <h3>Wins: <span id="player2wins"></span></h3>
+              <div id="player2buttons">
+                <button id="roll" class= "btn btn-large btn-danger">Roll Dice</button>
+                <button id="hold" class= "btn btn-large btn-success">Hold</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
