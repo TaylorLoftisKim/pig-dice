@@ -1,57 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Pig Dice</title>
+    <title>Pig Dice Game</title>
   </head>
   <body>
-    <div class="container">
+    <div class="start-menu container"><br><br>
       <div class="jumbotron">
-        <h1>Pig Dice Game</h1>
-      </div>
-      <div class="jumbotron">
-        <h2>Rules:</h2>
-          <ul>
-            <li>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</li>
-            <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
-            <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
-            <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
-          </ul>
-      </div>
-      <div class="row">
-        <div id="name">
-          <div class="col-md-4">
-            <div class="well">
-              <h2 id="player1">Player 1</span></h3>
-              <h3>Score: <span id="player1score"></span></h2>
-              <h3>Wins: <span id="player1wins"></span></h3>
-              <div id="player1buttons">
-                <button id="roll" class="btn btn-large btn-danger">Roll Dice</button>
-                <button id="hold" class="btn btn-large btn-success">Hold</button>
-              </div>
+        <img src="img/dice.jpg">
+          <form id="player-1">
+            <div class="form-group">
+              <label for="player1Name">Player 1:</label>
+              <input class="player1Name form-control" type="text">
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="well">
-              <h2>Roll: <span id= "dice"></span></h2>
-              <span id="displayedice"></span>
-              <h3 id="score">Current score: <span id="current"></span></h3>
+          </form>
+          <form id="player-2">
+            <div class="form-group">
+              <label for="player2Name">Player 2:</label>
+              <input class="player2Name form-control" type="text">
             </div>
-          </div>
+          </form>
+          <button id="start" class="btn">Start</button>
+      </div>
+    </div>
 
-          <div class="col-md-4">
-            <div class="well">
-              <h2 id="player2">Player 2</h2>
-              <h3>Score: <span id="player2score"></span></h3>
-              <h3>Wins: <span id="player2wins"></span></h3>
-              <div id="player2buttons">
-                <button id="roll" class= "btn btn-large btn-danger">Roll Dice</button>
-                <button id="hold" class= "btn btn-large btn-success">Hold</button>
-              </div>
-            </div>
+    <div class="player-console container"><br><br>
+      <div class="jumbotron">
+        <button id="new-game" class="btn">NEW GAME</button>
+        <div class = "row">
+          <div class="col-lg-6 display-1">
+            <h2>Player 1: <span id = "player1Name"><span></h2>
+              <button id="player1-roll" class="btn">Roll</button>
+              <button id="player1-hold" class="btn">Hold</button>
+            <h2>Dice Roll: <span id="die-roll-1"></span></h2>
+            <p>Round Total: <span id="round-total-1"></span></p>
+            <p>Total Score: <span id="total-score-1"></span></p>
+          </div>
+          <div class="col-lg-6 display-2">
+            <h2>Player 2: <span id = "player2Name"><span></h2>
+              <button id="player2-roll" class="btn">Roll</button>
+              <button id="player2-hold" class="btn">Hold</button>
+            <h2>Dice Roll: <span id="die-roll-2"></span></h2>
+            <p>Round Total: <span id="round-total-2"></span></p>
+            <p>Total Score: <span id="total-score-2"></span></p>
           </div>
         </div>
       </div>

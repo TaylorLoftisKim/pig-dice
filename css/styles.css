@@ -1,45 +1,78 @@
-h1  {
-  text-align: center;
-}
-h2 {
-  text-align: center;
-}
-h4 {
-  text-align: center;
-}
-#score {
-  text-align: center;
-}
-
-#displaydice{
-  font-size: 10em;
-  padding: 0;
-  margin: 0;
-  height: 163px;
-}
-
-#main{
-
-    text-align: center;
-}
-
-.instructions{
-  text-align: center;
-  padding-top: 10em;
-}
-body {
-  /*background-color: #ed95a9;*/
-  color: #8A3928;
-  font-family: Avenir;
-  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/37/b5/27/37b52739ce9165036da79f84a308b1b4.jpg);
-}
-.well {
-  background-color: #CA9897;
-}
 .jumbotron {
-  background-color: #CA9897;
+  background-color: #141414;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-ul {
-  font-size: 15px;
+h1 {
+  color: white;
+  font-weight: bold;
+}
+.player-console {
+  display: none;
+}
+
+body {
+  background-color: #616161;
+  font-family: Avenir;
+  color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.player1Name {
+  width: 50%;
+}
+
+.player2Name {
+  width: 50%;
+}
+
+label {
+  color: red;
+  font-size: 20px;
+}
+
+#start {
+  background-color: #616161;
+  font-size: 20px;
+}
+
+#new-game {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #616161;
+  font-size: 20px;
+}
+.display-1 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.display-2 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#player1-roll {
+  background-color: #8BC34A;
+}
+#player2-roll {
+  background-color: #8BC34A;
+}
+#player1-hold {
+  background-color: red;
+}
+#player2-hold {
+  background-color: red;
 }
